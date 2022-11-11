@@ -1,0 +1,37 @@
+print('Press one of the numbers below')
+print('1 = miles to km')
+print('2 = km to miles')
+choice = input('  1  2  \n')
+
+
+if(choice == '1'):
+        mile = input('Enter an amount of miles. \n')
+        mile = float(mile)
+
+        km = ( mile / 1.61 )
+
+        if(mile == '0' ):
+            print('0.00 km')
+        else:
+            print('The amount of km that would equal that many miles are:')
+        mile_value = mile * 1.61
+        mile_value = round(mile_value, 1)
+        print(str(mile_value) + 'km')
+        print('Thank you for choosing this calculator!')
+elif(choice == '2'):
+        km2 = input('Enter an amount of kilometers. \n')
+        km2 = float(km2)
+
+        mile2 = ( km2 * 1.61 )
+
+        if(km2 == '0' ):
+            print('0.00 miles')
+        else:
+            print('The amount of miles that would equal that many kilometers are:')
+            
+        km2_value = km2 / 1.61 
+        km2_value = round(km2_value, 1)
+        print(str(km2_value) + 'miles')
+        print('Thank you for choosing this calculator!')
+else:
+    print('That cannot be done.')
