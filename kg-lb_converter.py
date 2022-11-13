@@ -11,27 +11,27 @@ if(choice == '1'):
         lb = ( kg / 2.2 )
 
         if(kg == '0' ):
-            print('0.00 kg')
+            print('0.00 lb')
         else:
             print('The amount of pounds that would equal that many kilograms are:')
-        kg_value = kg * 2.2
-        kg_value = round(kg_value, 1)
-        print(str(kg_value) + 'lb')
+        lb_value = kg * 2.2
+        lb_value = round(lb_value, 1)
+        print(str(lb_value) + ' lb')
         print('Thank you for choosing this calculator!')
 elif(choice == '2'):
         lb2 = input('Enter an amount of pounds. \n')
         lb2 = float(lb2)
 
-        lb2 = ( lb2 * 2.2 )
+        kg2 = ( lb2 * 2.2 )
 
         if(lb2 == '0' ):
-            print('0.00 miles')
+            print('0.00 kg')
         else:
             print('The amount of kilograms that would equal that many pounds are:')
             
-        lb2_value = lb2 / 2.2 
-        lb2_value = round(lb2_value, 1)
-        print(str(lb2_value) + 'miles')
+        kg2_value = lb2 *  0.45359237
+        kg2_value = round(kg2_value, 1)
+        print(str(kg2_value) + ' kg')
         print('Thank you for choosing this calculator!')
 else:
     print('That cannot be done.')
