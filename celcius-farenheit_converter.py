@@ -11,27 +11,27 @@ if(choice == '1'):
         farenheit = ( celcius * 1.8 + 32 )
 
         if(celcius == '0' ):
-            print('0.00 degrees celcius')
+            print('0.00 degrees farenheit')
         else:
-            print('The amount of degrees celcius that would equal that many degrees farenheit is:')
-        celcius_value = celcius - 32 * 0.5556
-        celcius_value = round(celcius_value, 2)
-        print(str(celcius_value) + ' degrees farenheit')
+            print('The amount of degrees farenheit that would equal that many degrees celcius is:')
+        farenheit_value = celcius - 32 * 0.5556
+        farenheit_value = round(farenheit_value, 2)
+        print(str(farenheit_value) + ' degrees farenheit')
         print('Thank you for choosing this calculator!')
 elif(choice == '2'):
         farenheit2 = input('Enter an amount of degrees in farenheit. \n')
         farenheit2 = float(farenheit2)
 
-        farenheit2 = ( farenheit2 - 32 * 0.5556 )
+        celcius2 = ( farenheit2 - 32 * 0.5556 )
 
         if(farenheit2 == '0' ):
             print('0.00 degrees celcius')
         else:
-            print('The amount of degrees farenheit that would equal that many degrees celcius is:')
+            print('The amount of degrees celcius that would equal that many degrees farenheit is:')
             
-        farenheit2_value = farenheit2 * 1.8 + 32
-        farenheit2_value = round(farenheit2_value, 2)
-        print(str(farenheit2_value) + ' degrees')
+        celcius2_value = farenheit2 * 1.8 + 32
+        farenheit2_value = round(celcius2_value, 2)
+        print(str(celcius2_value) + ' degrees celcius')
         print('Thank you for choosing this calculator!')
 else:
     print('That cannot be done.')
